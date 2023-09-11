@@ -12,6 +12,7 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    gap: 60px;
 }
 
 .texto {
@@ -39,7 +40,7 @@ main {
     width: 340px;
     height: 380px;
     background-color: #fff;
-    gap: 20px;
+    border-radius: 5px;
 }
 
 .formulario input{
@@ -47,11 +48,38 @@ main {
     height: 35px;
     border: solid 1px;
     border-radius: 5px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
 .formulario #placeholder-text {
-    
+    padding-bottom: 80px;
     width: 298px;
     height: 100px;
+    margin-bottom: 5px;
+}
+
+.formulario .text-campos {
+    margin-left: -150px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.formulario .btn {
+    width: 298px;
+    height: 40px;
+    background-color: #3CCC87;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out, .2s;
+}
+
+.formulario .btn:hover{
+    transform: scale(1.02);
 }
