@@ -2,4 +2,56 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url(./image/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.texto {
+    width: 310px;
+    color: #fff;
+}
+
+.texto h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.texto .paragrafo {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+    height: 380px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.formulario input{
+    width: 298px;
+    height: 35px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.formulario #placeholder-text {
+    
+    width: 298px;
+    height: 100px;
 }
