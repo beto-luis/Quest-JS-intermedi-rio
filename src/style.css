@@ -43,12 +43,12 @@ main {
     border-radius: 5px;
 }
 
-.formulario .input-vazio {
+.formulario .input-preenchido {
     width: 298px;
     height: 35px;
-    border: solid 1px ;
+    border: solid 1px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 10px;
 } 
 
@@ -61,20 +61,27 @@ main {
     padding: 10px;
 }
 
-.formulario span {
+.borda-vermelha {
+    width: 298px;
+    height: 35px;
+    border: 1px solid #f52e2e;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.span {
     display: none;
-    color: red;
     font-size: 8px;
     font-weight: 400;
+    color: #f52e2e;
+    margin-left: -220px;
     margin-bottom: 6px;
-    margin-left: -230px;
 }
 
 .formulario #placeholder-text {
     padding-bottom: 80px;
     width: 298px;
     height: 100px;
-    margin-bottom: 5px;
 }
 
 .formulario .text-campos {

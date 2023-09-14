@@ -1,15 +1,17 @@
-const inputVazio = document.querySelectorAll(".input-vazio");
+const inputPreenchido = document.querySelectorAll(".input-preenchido");
 
-const btnEnviar = document.querySelector(".btn");
-
-inputVazio.forEach(input => {
+inputPreenchido.forEach(input => {
     input.addEventListener('change', () => {
         if (input.value !== "") {
-            input.classList.remove("input-vazio")
+            input.classList.remove("input-preenchido")
             input.classList.add("borda-verde");
         } else {
-            input.classList.add("input-vazio")
+            input.classList.add("input-preenchido")
             input.classList.remove("borda-verde")
         }
     });
 });
+
+const enviarForm = document.getElementById("btn-check")
+
+

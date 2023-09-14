@@ -14,20 +14,27 @@
             <h1>Ficou com dúvida? <br> nos mande uma mensagem!</h1>
             <p class="informativo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
         </div>
-        <div class="formulario">
-            <input class="input-vazio" type="text" placeholder="Nome completo *">
-            <span>campo obrigatório</span>
-            <input class="input-vazio" type="text" placeholder="Email *">
-            <span>campo obrigatório</span>
-            <input class="input-vazio" type="text" placeholder="Telefone *">
-            <span>campo obrigatório</span>
-            <input class="input-vazio" id="placeholder-text" type="text" placeholder="Mensagem *">
-            <span>campo obrigatório</span>
+        <form class="formulario">
+            <input class="input-preenchido" id="input-vazio" type="text" placeholder="Nome completo *" required>
+
+            <span class="span">campo obrigatório</span>
+
+            <input class="input-preenchido" id="input-vazio" type="text" placeholder="Email *">
+
+            <span class="span">campo obrigatório</span>
+
+            <input class="input-preenchido" id="input-vazio" type="text" placeholder="Telefone *">
+
+            <span class="span">campo obrigatório</span>
+
+            <input class="input-preenchido" id="placeholder-text" type="text" placeholder="Mensagem *">
+
+            <span class="span">campo obrigatório</span>
 
             <p class="text-campos">*Campos Obrigatórios</p>
 
-            <button class="btn">Enviar</button>
-        </div>
+            <button type="submit" class="btn" id="btn-check">Enviar</button>
+        </form>
     </main>
     <script src="./js/index.js"></script>
 </body>
