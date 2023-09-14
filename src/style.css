@@ -43,20 +43,31 @@ main {
     border-radius: 5px;
 }
 
-.formulario input {
+.formulario .input-vazio {
     width: 298px;
     height: 35px;
     border: solid 1px ;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 10px;
+} 
+
+.borda-verde{
+    width: 298px;
+    height: 35px;
+    border: 2px solid #3CCC87;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .formulario span {
-    /* display: none; */
+    display: none;
     color: red;
     font-size: 8px;
     font-weight: 400;
+    margin-bottom: 6px;
+    margin-left: -230px;
 }
 
 .formulario #placeholder-text {
