@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quest HTML + CSS + JS Intermediário | Formulário</title>
 
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <main>
-        <div class="texto">
-            <h1>Ficou com dúvida? <br> nos mande uma mensagem!</h1>
-            <p class="informativo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
-        </div>
+    <main class="container">
+        <section class="descricao">
+            <h1 class="titulo">Ficou com dúvida? <br> nos mande uma mensagem!</h1>
+            <p class="informativo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                contato em menos de 24h.</p>
+        </section>
         <form class="formulario">
-            <input class="input-preenchido" id="input-vazio" type="text" placeholder="Nome completo *" required>
-
-            <span class="span">campo obrigatório</span>
-
-            <input class="input-preenchido" id="input-vazio" type="text" placeholder="Email *">
-
-            <span class="span">campo obrigatório</span>
-
-            <input class="input-preenchido" id="input-vazio" type="text" placeholder="Telefone *">
-
-            <span class="span">campo obrigatório</span>
-
-            <input class="input-preenchido" id="placeholder-text" type="text" placeholder="Mensagem *">
-
-            <span class="span">campo obrigatório</span>
-
-            <p class="text-campos">*Campos Obrigatórios</p>
-
-            <button type="submit" class="btn" id="btn-check">Enviar</button>
+            <ul class="informacoes">
+                <li>
+                    <input class="validacao" name="nome" type="text" placeholder="Nome completo *" required>
+                    <span class="campo-obrigatorio">campo obrigatório</span>
+                </li>
+                <li>
+                    <input class="validacao" name="email" type="text" placeholder="Email *" required>
+                    <span class="campo-obrigatorio">campo obrigatório</span>
+                </li>
+                <li>
+                    <input class="validacao" name="telefone" type="number" placeholder="Telefone *" required>
+                    <span class="campo-obrigatorio">campo obrigatório</span>
+                </li>
+                <li>
+                    <textarea class="validacao" name="mensagem" id="mensagem"  placeholder="Mensagem" rows="10" required ></textarea>
+                    <span class="campo-obrigatorio">campo obrigatório</span>
+                </li>
+                <li>
+                    <p class="text-obrigatorio">*Campos Obrigatórios</p>
+                </li>
+                <li>
+                    <button type="submit" class="btn" id="btn-check">Enviar</button>
+                </li>
+            </ul>
         </form>
     </main>
-    <script src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
